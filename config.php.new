@@ -1,0 +1,11 @@
+<?php
+
+define('MOXI9_PUBLIC_KEY', '');
+define('MOXI9_PRIVATE_KEY', '');
+
+/**
+ * No need to edit the API URL.
+ */
+define('MOXI9_API_URL', 'https://api.moxi9.com/');
+
+?>
