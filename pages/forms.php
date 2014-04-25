@@ -1,7 +1,7 @@
 <m:title>Test Form</m:title>
 <m:h1>Test Form</m:h1>
 <p>
-	You can create forms using plain old HTML. You can also use <a href="http://unity.moxi9.com/docs/apps/m-markup" target="_blank" class="no_ajax">m:markup</a>, check out what you prefer below.
+	You can create forms using plain ol' HTML. You can also use <a href="http://unity.moxi9.com/docs/apps/m-markup" target="_blank" class="no_ajax">m:markup</a>, check out what you prefer below.
 </p>
 <article>
 	<h1>HTML Form (No M:Markup)</h1>
