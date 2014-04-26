@@ -9,6 +9,8 @@ error_reporting(E_ALL);
 
 $json = json_decode($_REQUEST['json']);
 
+define('MOXI9_CLIENT_ID', $json->client_api_id);
+
 $parts = explode('/', $json->url);
 
 $home_url = $parts[0];
@@ -49,6 +51,7 @@ function api_call($call, $params = array(), $method = 'GET') {
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 	curl_setopt($curl, CURLOPT_HEADER, false);
 	curl_setopt($curl, CURLOPT_USERPWD, MOXI9_PUBLIC_KEY . ':' . MOXI9_PRIVATE_KEY);
+	curl_setopt($curl, CURLOPT_HTTPHEADER, array('MOXI9-CLIENT: ' . MOXI9_CLIENT_ID));
 	curl_setopt($curl, CURLOPT_URL, (($method == 'GET' && !empty($params)) ? $url . '?' . ltrim($params, '&') : $url));
 
 	if ($method == 'POST') {
