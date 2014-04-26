@@ -17,4 +17,4 @@ define('MOXI9_PUBLIC_KEY', '');
 define('MOXI9_PRIVATE_KEY', '');
 ```
 
-That's it! Just point your App to where you have cloned this repostiry.
+That's it! Just point your App to where you have cloned this repository.
